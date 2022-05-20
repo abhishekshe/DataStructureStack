@@ -57,5 +57,18 @@ namespace StacksAndQueues
                 }
             }
         }
+
+        public void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Empty Queue");
+            }
+            
+            head = head.next;
+            DisplayQueue();
+
+
+        }
     }
 }
